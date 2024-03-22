@@ -28,7 +28,7 @@ SELECT name
  WHERE name LIKE 'my %' 
     OR name LIKE '% my %'
     OR name LIKE '% мой %'
-    OR name LIKE 'мой %;
+    OR name LIKE 'мой %';
 	
 --Количество исполнителей в каждом жанре.
 SELECT genre.name, COUNT(genres_of_artist.artist_id)
